@@ -1,0 +1,206 @@
+/* Donation account boxes */
+.account-box {
+  background: #fffbe6;
+  border: 2px solid #ffd700;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.08);
+  padding: 18px 16px;
+  margin: 18px 0;
+  max-width: 350px;
+  text-align: left;
+}
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.account-name {
+  color: #d90429;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+.account-number {
+  color: #222;
+  font-size: 1.05rem;
+}
+.account-holder {
+  color: #d90429;
+  font-weight: 500;
+  font-size: 1rem;
+}
+/* Donation box styling */
+.donation-box {
+  background: #e0e7ef;
+  border: 2px solid #2d3e50;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+  padding: 24px 18px;
+  margin: 28px auto 0 auto;
+  max-width: 350px;
+  text-align: center;
+}
+.donation-box h1 {
+  color: #1b9aaa;
+  font-size: 2rem;
+  margin: 10px 0 8px 0;
+  border: none;
+  padding: 0;
+}
+.donation-box h2 {
+  color: #2d3e50;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  border: none;
+  padding: 0;
+}
+.donation-box h3 {
+  color: #3a506b;
+  margin: 8px 0 0 0;
+}
+.donation-box h5 {
+  color: #2d3e50;
+  margin: 10px 0 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #f0f4f8 0%, #e0e7ef 100%);
+  color: #222;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  background: #2d3e50;
+  color: #fff;
+  padding: 30px 0 10px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+header img {
+  margin: 10px auto 18px auto;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.13);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+section {
+  background: #fff;
+  margin: 30px auto;
+  padding: 30px 24px;
+  border-radius: 14px;
+  max-width: 800px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.07);
+}
+
+section h1 {
+  color: #2d3e50;
+  margin-bottom: 18px;
+  font-size: 2rem;
+  border-bottom: 2px solid #e0e7ef;
+  padding-bottom: 6px;
+}
+
+section h2 {
+  color: #3a506b;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+img {
+  display: block;
+  margin: 18px auto 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.13);
+}
+
+a {
+  color: #2d3e50;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #1b9aaa;
+}
+
+footer {
+  text-align: center;
+  padding: 18px 0 10px 0;
+  background: #2d3e50;
+  color: #fff;
+  margin-top: 40px;
+  border-radius: 0 0 14px 14px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  section {
+    max-width: 98vw;
+    padding: 18px 6vw;
+  }
+  nav ul {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  section h1 {
+    font-size: 1.2rem;
+  }
+  section {
+    padding: 12px 2vw;
+  }
+  img {
+    width: 120px !important;
+    height: 80px !important;
+  }
+}
